@@ -19,7 +19,7 @@ except ImportError:
     wandb = None
 
 from model import Generator, Discriminator
-from dataset import MultiResolutionDataset
+from dataset.dataset import MultiResolutionDataset
 from distributed import (
     get_rank,
     synchronize,
